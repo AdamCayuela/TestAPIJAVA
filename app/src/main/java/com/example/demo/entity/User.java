@@ -11,7 +11,7 @@ import java.util.Set;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //@GeneratedValue (strategy = GenerationType.UUID) pour générer un Unique & Universal ID
     private Long id;
 
     @Column(nullable = false, unique = true)
